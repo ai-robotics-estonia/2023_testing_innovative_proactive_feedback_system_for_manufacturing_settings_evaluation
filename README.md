@@ -1,7 +1,6 @@
 *This is a template repository for this organization. Start by replacing the placeholder for the project name with it's actual title.*
 
-# [Demonstration Project title]
-
+# Proactive Feedback System for Manufacturing Settings Evaluation
 ## Summary
 
 | Company name | [Company](https://website.link) |
