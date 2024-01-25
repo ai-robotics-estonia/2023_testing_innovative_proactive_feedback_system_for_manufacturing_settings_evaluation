@@ -1,54 +1,48 @@
-*This is a template repository for this organization. Start by replacing the placeholder for the project name with it's actual title.*
-
 # Proactive Feedback System for Manufacturing Settings Evaluation
 ## Summary
 
-| Company name | [Company](https://website.link) |
+| Company name | [Krah Pipes OÜ](https://www.krah-pipes.ee/) |
 | :--- | :--- |
-| Development Team Lead Name | [First name, Surname](https://profile.link) |
-| Development Team Lead e-mail | [Team Member 1](https://profile.link) |
-| Objectives of the Demonstration Project |  |
-
-# Each project has an alternative:
-
-- *a) To fill in the description [below](https://github.com/ai-robotics-estonia/_project_template_/edit/main/README.md#implementation-details)*
-*OR*
-- *c) a custom agreement with the AIRE team*
+| Development Team Lead Name | [Vahur Kotkas](https://taltech.ee/en/department-of-software-science/cooperation/applied-artificial-intelligence-group) |
+| Development Team Lead e-mail | [vahur.kotkas@taltech.ee](mailto:vahur.kotkas@taltech.ee) |
+| Development Team Member | [Priit Järv](https://taltech.ee/en/department-of-software-science/cooperation/applied-artificial-intelligence-group) |
+| Development Team Member | [Kristiina Kindel](https://taltech.ee/en/department-of-software-science/cooperation/applied-artificial-intelligence-group) 
 
 ## Objectives of the Demonstration Project
-*Please provide your objectives here.*
+The objective of the project was to create and validate a proactive feedback system, which evaluates the process setting parameters and estimates the geometric dimensions that can be achieved on the final product (compliance with the given dimensions) based on these. The feedback system must warn the operator when the process setting parameters seem to be inappropriate for a target set. The idea was to validate the possible correlations between process inputs and end product dimensions.
 
 ## Activities and results of demonstration project
-*Challenge addressed (i.e. whether and how the initial challenge was changed during the project, for which investment the demonstration project was provided)*
--  *a)*
+*Activities - The challenges addressed*
+-  *a) Collect, evaluate and clean the data from the manufacturing process*
+-  *b) Analyse the data for possible dependencies/correlations detection*
+-  *c) Evaluate most promising ML algorithms for learning the relations between process setting parameters and their match to the projected*
+-  *d) Test the learnt model on the real data*
 
 *Data sources (which data was used for the technological solution)*
--  *a)*
+-  *a) Data from pipes’ production line sensors and automated quality control station was used.*
 
 *Description and justifictaion of used AI technology*
--  *a)*
+-  *a) Statistical analysis of production data, to identify correlation to end product quality*
+-  *b) Simple models like linear regression, to provide a baseline*
+-  *c) Ensemble models, because they have demonstrated high performance in practical settings with limited data*
+-  *d) Deep sequential neural models, because they are considered the current state of the art*
+-  *e) XAI methods (SHAP) to provide explanations of product defects*
 
 *Results of testing and validating technological solution*
--  *a)*
+-  *a) It was validated that correlations between process inputs and end product dimensions are present. Any illogical relations were not detected.
+Although the accuracy of predictions was lower than anticipated, we also determined the possible reasons for that (measurement accuracy, data cleaning and aggregation methodology).*
 
 *Technical architecture (presented graphically, where can also be seen how the technical solution integrates with the existing system)*
--  *a)*
+-  *a) The main goal of the demoproject was to perform a data analysis and to train and validate a model for quality parameters prediction, hence there is no technical architecture of the technological solution to present.*
 
 *Potential areas of use of technical solution*
--  *a)*
+-  *a) pipe production*
+-  *b) manufacturing industry*
 
 *Lessons learned (i.e. assessment whether the technological solution actually solved the initial challenge)*
--  *a)*
+-  *a) Collected data reliability is one of the key issues. The project pointed out that improvements are needed in final products measuring process.*
+-  *b) The amount of analysed data for the basis of ML model is of significant importance. Due to relatively short training period this amount was limited. Longer training period contributes to the accuracy of the ML model.*
+-  *c) Adding data points to the process contributes also to the accuracy of the model.*
 
-### Description of User Interface 
-*(i.e. How does the client 'see' the technical result, whether a separate user interface was developed, command line script was developed, was it validated as an experiment, can the results be seen in ERP or are they integrated into work process)*
--  *a)*
-
-
-## Custom agreement with the AIRE team
-
-*If you have a unique project or specific requirements that don't fit neatly into the Docker file or description template options, we welcome custom agreements with our AIRE team. This option allows flexibility in collaborating with us to ensure your project's needs are met effectively.*
-
-*To explore this option, please contact our demonstration projects service manager via katre.eljas@taltech.ee with the subject line "Demonstration Project Custom Agreement Request - [Your Project Name]." In your email, briefly describe your project and your specific documentation or collaboration needs. Our team will promptly respond to initiate a conversation about tailoring a solution that aligns with your project goals.*
-
-
+### Description of User Interface
+-  *a) There is no user interface developed. The solution needs to be integrated into the production station. For execution of the code one needs python3*
