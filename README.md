@@ -1,4 +1,4 @@
-# Proactive Feedback System for Manufacturing Settings Evaluation
+# Testing innovative proactive Feedback System for Manufacturing Settings Evaluation
 ## Summary
 
 | Company name | [Krah Pipes OÜ](https://www.krah-pipes.ee/) |
